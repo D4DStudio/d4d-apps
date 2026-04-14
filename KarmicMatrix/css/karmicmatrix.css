@@ -502,3 +502,21 @@ ul.feature-list a:hover {
     font-size: 14px;
   }
 }
+
+.account-delete {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #C5C0D4;
+  text-align: center;
+}
+
+.account-delete a {
+  color: #DF9C0A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.account-delete a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}

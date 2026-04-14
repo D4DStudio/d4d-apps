@@ -265,13 +265,55 @@
         font-size: 0.9rem;
       }
     }
+
+    .top-brand {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.top-brand img {
+  height: 72px;
+  opacity: 0.95;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.brand-link:hover img {
+  transform: translateY(-1px) scale(1.01);
+  opacity: 1;
+}
+
+.back-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
   </style>
 </head>
 <body>
   <div class="page-wrap">
-    <div class="top-brand">
-      <img src="images/matrix_logo.png" alt="Karmic Matrix Logo" />
-    </div>
+<div class="top-brand">
+  <a href="karmicmatrix.html" class="brand-link">
+    <img src="images/matrix_logo.png" alt="Karmic Matrix Logo" />
+  </a>
+  <a href="karmicmatrix.html" class="back-link">← Back to Karmic Matrix</a>
+</div>
 
     <div class="lang-buttons" role="group" aria-label="Language selection">
       <button type="button" onclick="setLanguage('en')">English 🇬🇧</button>
