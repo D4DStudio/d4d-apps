@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | D4D Apps</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="description" content="Learn more about D4D Apps — intuitive and elegant mobile experiences created by D4D Studio." />
+  <style>
+    *{box-sizing:border-box}
+    html,body{height:100%}
+
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg,#0d2342,#08152e);
+      background-attachment: fixed;
+      color:#e6edf7;
+      padding:0;
+    }
+
+    .container{
+      width:100%;
+      max-width:1250px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.8);
+      overflow:hidden;
+      margin:0 auto;
+      border: 2px solid #5fd0c9;
+    }
+
+    .logo{
+      width:128px;
+      height:128px;
+      border-radius:64px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+
+    header, footer{
+      padding:24px 36px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      margin-left:16px;
+      text-decoration:none;
+      color:#d9e6f7;
+      font-weight:600;
+      transition:color .2s;
+    }
+
+    nav a:hover,
+    nav a.active{
+      color:#5fd0c9;
+    }
+
+    main{
+      padding:60px 36px;
+      max-width:920px;
+      margin:0 auto;
+      line-height:1.8;
+      color:#e6edf7;
+    }
+
+    main h2{
+      font-size:2rem;
+      color:#5fd0c9;
+      margin-bottom:20px;
+      font-family: inherit;
+    }
+
+    main p{
+      margin-bottom:18px;
+      color:#dfe8f5;
+    }
+
+    footer{
+      background:rgba(255,255,255,0.03);
+      color:#cdd9ea;
+      font-size:0.9rem;
+      margin-bottom:10px;
+    }
+
+    @media(max-width:740px){
+      header, footer, main{padding:18px;}
+      main h2{font-size:1.6rem;}
+      .logo{
+        width:96px;
+        height:96px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="D4D_Logo_Apps_2.png" alt="D4D Apps logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>About D4D Apps</h2>
+      <p>
+        D4D Apps is a creative branch of D4D Studio focused on building elegant, intuitive, and meaningful mobile experiences.
+        Our goal is to create apps that feel clear, thoughtful, and visually refined.
+      </p>
+      <p>
+        We believe mobile applications can do more than serve a function — they can also offer insight, simplicity, and a sense of connection.
+        From personal growth tools to lifestyle-focused digital experiences, each project is designed with care, usability, and depth in mind.
+      </p>
+      <p>
+        At D4D Apps, we combine practical design with a calm visual identity to create products that feel both useful and memorable in everyday life.
+      </p>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> D4D Apps</div>
+      <div>Powered by D4D Studio ✨</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
