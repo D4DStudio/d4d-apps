@@ -520,3 +520,9 @@ ul.feature-list a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
+
+.disabled-btn {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: default;
+}
